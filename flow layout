@@ -1,0 +1,32 @@
+package layout;
+import java.awt.FlowLayout;
+import java.awt.Container;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Layout extends JFrame {
+    //FLOW LAYOUT = SEM SOBREPOSIÇAÕ DE BTOES
+    public Layout()
+    {
+       super("Layouts");
+    Container c = getContentPane();
+    c.setLayout(new FlowLayout());
+    c.add(new JButton("Botão 1"));
+    c.add(new JButton("Botão 2"));
+    c.add(new JButton("Botão 3"));
+    c.add(new JButton("Botão 4"));
+    c.add(new JButton("Botão 5"));
+   
+    
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    setSize(300, 300);
+    setVisible(true);
+    }
+    
+    
+    
+    public static void main(String[] args) {
+        new Layout();
+    }
+    
+}
