@@ -1,0 +1,19 @@
+package grafico;
+
+import javax.swing.JFrame;
+
+public class Grafico {
+     
+        public Grafico(){
+                
+        JFrame minhaJanela = new JFrame();
+        minhaJanela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//acaba o programa quando fecha a janela
+        minhaJanela.setSize(300, 300);//tamanho da janela
+        minhaJanela.setVisible(true);//mostra a janela
+    }
+    
+        public static void main(String[] args) {
+            new Grafico();
+        }
+       
+}
