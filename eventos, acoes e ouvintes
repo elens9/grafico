@@ -1,0 +1,31 @@
+package acao;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class Acao extends JFrame implements ActionListener  {
+    public Acao()
+    {
+        super("Eventos");
+        JButton botao = new JButton("OK"); 
+        botao.addActionListener(this);
+        getContentPane().add(botao);
+        
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(300, 300);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+      new Acao();
+    }
+    @Override
+    public void actionPerformed(ActionEvent e){
+        JOptionPane.showMessageDialog(null, 
+                "Olá, isso é uma caixa de mensagem", 
+                "CAIXA DE MENSAGEM", 
+                JOptionPane.INFORMATION_MESSAGE);
+    }
+}
