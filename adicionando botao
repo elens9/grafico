@@ -1,0 +1,21 @@
+package grafico2;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Grafico2 {
+    //adicionando botao
+  public Grafico2(){
+  JFrame minhaJanela = new JFrame();
+  JButton botao =  new JButton("Clique");
+  minhaJanela.getContentPane().add(botao);//no conteiner da janela é recebido o botao
+  minhaJanela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  minhaJanela.setSize(300, 300);
+  minhaJanela.setVisible(true);
+  }
+  
+    public static void main(String[] args) {
+    new Grafico2();
+    }
+    
+}
