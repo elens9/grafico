@@ -1,0 +1,22 @@
+package grafico3;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Grafico3 extends JFrame {
+    //classe sendo a janela, nao precisa instanciar um "new janela"
+    public Grafico3()
+    {
+    JButton botao =  new JButton("Clique");
+    getContentPane().add(botao);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    setSize(300, 300);
+    setVisible(true);
+    }
+    
+    public static void main(String[] args) {
+        new Grafico3();
+     
+    }
+    
+}
